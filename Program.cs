@@ -47,16 +47,25 @@ int ThirdDigitOfNumber (int number)
 Console.Write("Input a number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int thirdDigit = ThirdDigitOfNumber(number);
-Console.WriteLine($"Third digit of the number {number} is {thirdDigit}");
+
+if (thirdDigit == -1) Console.WriteLine("There is no third digit in this number");
+else Console.WriteLine($"Third digit of the number {number} is {thirdDigit}");
 
 */
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую
 // день недели, и проверяет, является ли этот день выходным.
 
+/*
 bool WeekendCheck (int dayNumber)
 {
-    return dayNumber = 6 || dayNumber = 7;
+    return dayNumber == 6 || dayNumber == 7;
      
 }
 
+Console.Write("Input a day number of the week: ");
+int dayNumber = Convert.ToInt32(Console.ReadLine());
+bool check = WeekendCheck(dayNumber);
+if (check) Console.WriteLine("Yes!!! It is a weekend!");
+else Console.WriteLine("No. It is not a weekend.");
+*/
